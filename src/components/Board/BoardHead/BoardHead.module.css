@@ -1,0 +1,43 @@
+.board-head {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.board-head__title {
+  line-height: 56px;
+  font-weight: 800;
+  color: #1D262C;
+  font-size: 34px;
+  cursor: pointer;
+
+  transition: all .5s;
+}
+
+.board-head__title:hover .board-head__amount {
+  animation: pulse 1s infinite;
+}
+
+.board-head__amount {
+  position: absolute;
+  margin-left: 10px;
+  color: #fa27e8;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+

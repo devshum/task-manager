@@ -1,7 +1,4 @@
 .button {
-  display: flex;
-  align-items: center;
-
   padding: 8px 26px;
   background-color: #884CB2;
   font-family: inherit;
@@ -11,12 +8,47 @@
   font-size: 12px;
   border: 0;
 
-  transition: all .5s;
+  position: relative;
   cursor: pointer;
+}
+
+.button:active {
+  transform: scale(.95);
+}
+
+.button,
+.button::after {
+  transition: all .5s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.button:hover::after {
+  transform: scaleX(1.2);
+  opacity: 0;
 }
 
 .button:hover {
   background-color: #7b34ad;
+}
+
+.button__wrapper {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
 }
 
 .button__icon {

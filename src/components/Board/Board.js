@@ -1,13 +1,23 @@
 import styles from './Board.module.css';
 import BoardHead from './BoardHead/BoardHead';
 
-const Board = () => {
+const Board = props => {
   return (
-    <div className={styles.board}>
+    <section className={styles.board}>
       <BoardHead />
-      <div>Tasks on hold</div>
-      <div>Tasks completed</div>
-    </div>
+      <h2>Tasks on hold</h2>
+      { props.data.map(task => {
+        return <div>
+                  <p>{ task.title }</p>
+                  <p>{ task.date.getFullYear() }</p>
+                  <p>{ task.date.getMonth() }</p>
+                  <p>{ task.date.getDay() }</p>
+                  <p>{ task.status }</p>
+                  <p>{ task.importance }</p>
+               </div>
+      }) }
+      {/* <h2>Tasks completed</h2> */}
+    </section>
   )
 }
 

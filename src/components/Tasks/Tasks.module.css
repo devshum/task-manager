@@ -1,0 +1,27 @@
+.tasks__hold-label {
+  margin-bottom: 6px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #1D262C;
+  font-size: 18px;
+}
+
+.tasks__wrapper {
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #884CB2 #ffffff;
+}
+
+.tasks__wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.tasks__wrapper::-webkit-scrollbar-thumb {
+  background-color: #884CB2;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  border-radius: 8px;
+}

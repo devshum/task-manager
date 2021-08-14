@@ -16,6 +16,62 @@ const App = () => {
         status: 'pending',
         importance: 'minor'
       },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      },
+
+      {
+        title: 'Identify the implementation team.',
+        date: new Date(2021, 8, 22),
+        status: 'pending',
+        importance: 'minor'
+      }
     ],
 
     completedTasks: []

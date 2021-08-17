@@ -1,7 +1,7 @@
-import styles from './Board.module.css';
-import BoardHead from './BoardHead/BoardHead';
-import Tasks from '../Tasks/Tasks';
-import FormInputs from '../FormInputs/FormInputs';
+import styles from './Board.module.css'
+import BoardHead from './BoardHead/BoardHead'
+import Tasks from '../Tasks/Tasks'
+import FormInputs from '../FormInputs/FormInputs'
 
 const Board = props => {
   return (
@@ -13,4 +13,4 @@ const Board = props => {
   )
 }
 
-export default Board;
+export default Board

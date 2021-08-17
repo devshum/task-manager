@@ -78,6 +78,6 @@ const App = () => {
   }
 
   return <Board curTasks={data.currentTasks} />
-};
+}
 
-export default App;
+export default App

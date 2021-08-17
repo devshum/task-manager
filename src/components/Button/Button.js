@@ -1,5 +1,5 @@
-import styles from './Button.module.css';
-import { ReactComponent as ButtonIcon } from '../../assets/icon-btn.svg';
+import styles from './Button.module.css'
+import { ReactComponent as ButtonIcon } from '../../assets/icon-btn.svg'
 
 const Button = props => {
   return <button className={styles.button}>
@@ -10,4 +10,4 @@ const Button = props => {
          </button>
 }
 
-export default Button;
+export default Button

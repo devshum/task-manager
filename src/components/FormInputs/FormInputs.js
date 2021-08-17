@@ -32,4 +32,4 @@ const FormInputs = () => {
   )
 }
 
-export default FormInputs;
+export default FormInputs

@@ -1,4 +1,4 @@
-import styles from './Task.module.css';
+import styles from './Task.module.css'
 
 const Task = props => {
   return (
@@ -25,4 +25,4 @@ const Task = props => {
   )
 }
 
-export default Task;
+export default Task

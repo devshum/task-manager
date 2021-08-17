@@ -1,9 +1,9 @@
-import styles from "./BoardHead.module.css";
-import Button from '../../Button/Button';
+import styles from "./BoardHead.module.css"
+import Button from '../../Button/Button'
 
 const BoardHead = props => {
-  const curTasksAmount = props.curTasks.length;
-  const suffix = props.curTasks.length > 1 ? 'tasks' : 'task';
+  const curTasksAmount = props.curTasks.length
+  const suffix = props.curTasks.length > 1 ? 'tasks' : 'task'
 
   return (
     <div className={styles['board-head']}>
@@ -16,4 +16,4 @@ const BoardHead = props => {
   )
 }
 
-export default BoardHead;
+export default BoardHead

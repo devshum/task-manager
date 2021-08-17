@@ -1,5 +1,5 @@
-import styles from './Tasks.module.css';
-import Task from './Task/Task';
+import styles from './Tasks.module.css'
+import Task from './Task/Task'
 
 const Tasks = props => {
   return (
@@ -20,4 +20,4 @@ const Tasks = props => {
   )
 }
 
-export default Tasks;
+export default Tasks

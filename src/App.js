@@ -77,7 +77,14 @@ const App = () => {
     completedTasks: []
   }
 
-  return <Board curTasks={data.currentTasks} />
+  const addTaskHandler = savedTaskData => {
+    const taskData = {...savedTaskData}
+
+    /// test
+    console.log(taskData)
+  }
+
+  return <Board curTasks={data.currentTasks} onAddTask={addTaskHandler} />
 }
 
 export default App

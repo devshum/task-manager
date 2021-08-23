@@ -73,9 +73,7 @@ const FormInputs = props => {
 
       <div>
         <label htmlFor="date">Date:</label>
-        <input type="date" 
-               min="2021-01-01" 
-               max="2024-01-01" 
+        <input type="date"  
                value={userInput.enteredDate} 
                onChange={changeDateHandler} />
       </div>

@@ -16,6 +16,20 @@
   transition: all .5s;
 }
 
+.board-head__title-wrap,
+.board-head__filter-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.board-head__filter-wrap {
+  margin-left: 180px;
+}
+
+.board-head__filter-wrap select {
+  margin-left: 12px;
+}
+
 .board-head__title:hover .board-head__amount {
   animation: pulse 1s infinite;
 }

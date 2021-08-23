@@ -1,90 +1,29 @@
 import Board from './components/Board/Board'
+import { useState } from 'react'
+
+const data = {
+  currentTasks: [
+   
+  ],
+
+  completedTasks: []
+}
 
 const App = () => {
-  const data = {
-    currentTasks: [
-      {
-        title: 'Evaluate the addition and deletion of user IDs.',
-        date: new Date(2021, 8, 20),
-        status: 'pending',
-        importance: 'minor'
-      },
-  
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2021, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2022, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2024, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2024, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2024, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2023, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2021, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2021, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      },
-
-      {
-        title: 'Identify the implementation team.',
-        date: new Date(2021, 8, 22),
-        status: 'pending',
-        importance: 'minor'
-      }
-    ],
-
-    completedTasks: []
-  }
+  const [currentTasks, setCurrentTasks] = useState(data.currentTasks)
 
   const addTaskHandler = savedTaskData => {
-    const taskData = {...savedTaskData}
+    const newTask = {...savedTaskData}
 
-    /// test
-    console.log(taskData)
+    setCurrentTasks(prevState => {
+      return [
+        newTask,
+        ...prevState
+      ]
+    })
   }
 
-  return <Board curTasks={data.currentTasks} onAddTask={addTaskHandler} />
+  return <Board curTasks={currentTasks} onAddTask={addTaskHandler} />
 }
 
 export default App

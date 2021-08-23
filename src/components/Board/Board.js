@@ -5,7 +5,7 @@ import FormInputs from '../FormInputs/FormInputs'
 import { useState } from 'react'
 
 const Board = props => {
-  const [enteredYear, setEnteredYear] = useState('2021')
+  const [enteredYear, setEnteredYear] = useState('')
 
   const saveTaskDataHandler = enteredTaskData => {
     props.onAddTask({...enteredTaskData})

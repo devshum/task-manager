@@ -11,13 +11,13 @@ const BoardHead = props => {
     props.onSaveFilterData(e.target.value)
   }
 
-  const getAllYearsAmount = () => {
-    const allYears = props.curTasks.map(task => task.date.getFullYear())
+  // const getAllYearsAmount = () => {
+  //   const allYears = props.curTasks.map(task => task.date.getFullYear())
 
-    allUniqueYears = [...new Set(allYears)]
-  }
+  //   allUniqueYears = [...new Set(allYears)]
+  // }
 
-  getAllYearsAmount()
+  // getAllYearsAmount()
 
   return (
     <div className={styles['board-head']}>

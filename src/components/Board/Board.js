@@ -2,17 +2,27 @@ import styles from './Board.module.css'
 import BoardHead from './BoardHead/BoardHead'
 import Tasks from '../Tasks/Tasks'
 import FormInputs from '../FormInputs/FormInputs'
+import { useState } from 'react'
 
 const Board = props => {
+  const [enteredYear, setEnteredYear] = useState('2021')
+
   const saveTaskDataHandler = enteredTaskData => {
     props.onAddTask({...enteredTaskData})
   }
 
+  const saveFilterDataHandler = enteredYear => {
+    setEnteredYear(enteredYear)
+  }
+
   return (
     <section className={styles.board}>
-      <BoardHead curTasks={props.curTasks} />
+      <BoardHead onSaveFilterData={saveFilterDataHandler} 
+                 curTasks={props.curTasks}
+                 enteredYear={enteredYear} />
       <FormInputs onSaveTaskData={saveTaskDataHandler} />
-      <Tasks curTasks={props.curTasks} />
+      <Tasks curTasks={props.curTasks} 
+             enteredYear={enteredYear} />
     </section>
   )
 }
